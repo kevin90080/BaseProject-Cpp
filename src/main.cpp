@@ -3,9 +3,10 @@
 
 #ifndef TEST
 int main() {
-    printf("Rule Breaker!!!\n");
-    printf("5 + 2 = %d\n", addNumber(5, 2));
-    printf("%d\n", getTriangleType(3, 4, 5));
+    int a;
+    printf("請輸入寶石數量:\n");
+    scanf(" %d",&a);
+    printf("可以進行 %d抽\n", drawCard(a));
     return 0;
 }
 #endif // TEST
@@ -35,4 +36,18 @@ int getTriangleType(int a, int b, int c) {
         return -1;
     }
     return -3;
+
+
 }
+
+int drawCard(int a) {
+  int b=a/3;
+  return b;
+
+  if (a<0)
+    return 0;
+
+
+}
+
+

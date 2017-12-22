@@ -9,7 +9,11 @@ void testGetTriangleType() {
     assert(getTriangleType(1, 2, 3) == -2);
     assert(getTriangleType(3, 4, 6) == -1);
     assert(getTriangleType(3, 3, 3) == 1);
+
+    assert(drawCard(-2) ==0);
+    assert(drawCard(3) ==1);
 }
+
 
 int main() {
     assert(addNumber(5, 2) == 7);
